@@ -7,10 +7,10 @@ def main():
    ##################################################
    # Code your program here
    ##################################################
-    # overtime = workhours - reg_hours
-    # overtime_wage = overtime * ov_rate
-    # regular_wage = reg_hours * reg_rate
-    # total_wage = regular_wage + overtime_wage
+    overtime = workhours - reg_hours
+    regular_wage = (workhours-overtime)*reg_rate
+    overtime_wage = (workhours-reg_hours)*ov_rate
+    total_wage = regular_wage+overtime_wage
 
     print(f"Regular hours: {reg_hours} Regular Charge: {regular_wage}")
     print(f"Overtime hours: {overtime} Overtime Charge: {overtime_wage:.2f}")
